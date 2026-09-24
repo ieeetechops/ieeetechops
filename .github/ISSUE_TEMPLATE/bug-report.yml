@@ -1,0 +1,54 @@
+name: Hata bildirimi
+description: Dokümantasyon veya TechOps projesindeki tekrarlanabilir bir sorunu bildirin.
+title: "[Hata]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Teşekkürler. Kişisel veri, parola, token veya güvenlik açığı paylaşmayın.
+        Güvenlik sorunu için Security Policy içindeki özel kanalı kullanın.
+  - type: input
+    id: project
+    attributes:
+      label: Etkilenen proje veya sayfa
+      placeholder: Örn. Dokümantasyon / Başlangıç sayfası
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Sorun
+      description: Ne oldu ve ne olmasını bekliyordunuz?
+      placeholder: Gerçekleşen ve beklenen davranışı açıklayın.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Yeniden üretme adımları
+      placeholder: |
+        1. ... sayfasını aç
+        2. ... işlemini yap
+        3. ... hatasını gör
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ortam
+      description: İlgiliyse işletim sistemi, tarayıcı, cihaz veya sürüm.
+  - type: textarea
+    id: context
+    attributes:
+      label: Ek bağlam
+      description: Hassas bilgi içermeyen log, bağlantı veya ekran görüntüsü.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Güvenlik kontrolü
+      options:
+        - label: Bu bildirim kişisel veri, parola, token veya gizli sistem bilgisi içermiyor.
+          required: true
+

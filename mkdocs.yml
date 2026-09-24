@@ -1,0 +1,91 @@
+site_name: IEEE İKÇÜ TechOps
+site_description: IEEE İKÇÜ TechOps teknik dokümantasyonu
+site_url: https://ieeetechops.github.io/ieeetechops/
+repo_url: https://github.com/ieeetechops/ieeetechops
+repo_name: ieeetechops/ieeetechops
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: tr
+  logo: assets/mark.svg
+  favicon: assets/mark.svg
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Koyu temaya geç
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Açık temaya geç
+
+nav:
+  - Ana Sayfa: index.md
+  - Başlangıç: getting-started.md
+  - Projeler: projects.md
+  - Yol Haritası: roadmap.md
+  - Sistem Durumu: status.md
+  - Teknik El Kitabı:
+      - Mimari Yaklaşım: architecture/overview.md
+      - Geliştirme Standartları: standards/development.md
+      - Dokümantasyon Standardı: standards/documentation.md
+      - Güvenlik İlkeleri: standards/security.md
+  - Operasyon:
+      - Dönem Devri: operations/handover.md
+      - Olay Yönetimi: operations/incident-response.md
+  - Kararlar:
+      - ADR Dizini: decisions/index.md
+      - "ADR-0001: Modüler Mimari": decisions/0001-modular-architecture.md
+  - Katkıda Bulun: contributing.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search:
+      lang: tr
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ieeetechops
+      name: IEEE İKÇÜ TechOps GitHub
+
+copyright: IEEE İKÇÜ TechOps · Sürdürülebilir altyapı, devredilebilir sistemler.

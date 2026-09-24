@@ -1,0 +1,45 @@
+name: Özellik önerisi
+description: Mevcut bir proje veya sürece yönelik iyileştirme önerin.
+title: "[Öneri]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: İhtiyaç
+      description: Çözümden önce problemi ve bundan etkilenen kullanıcıyı anlatın.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Beklenen sonuç
+      description: Başarılı olduğunda ne değişecek ve nasıl anlaşılacak?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Önerilen yaklaşım
+      description: Varsa çözüm fikrinizi ve alternatifleri paylaşın.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Alan
+      options:
+        - Dokümantasyon
+        - Üyelik
+        - Etkinlik
+        - Otomasyon ve entegrasyon
+        - Web
+        - Altyapı ve güvenlik
+        - Diğer
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Veri, güvenlik veya bakım etkisi
+      description: Kişisel veri, yeni hesap/servis, ücret veya sürekli bakım gerektiriyor mu?
+

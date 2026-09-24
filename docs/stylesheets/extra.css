@@ -1,0 +1,85 @@
+:root {
+  --md-primary-fg-color: #00629b;
+  --md-primary-fg-color--light: #1687b8;
+  --md-primary-fg-color--dark: #00466f;
+  --md-accent-fg-color: #00a4cc;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0076b8;
+  --md-accent-fg-color: #43c7e8;
+}
+
+.md-header {
+  box-shadow: 0 1px 0 rgb(255 255 255 / 10%);
+}
+
+.techops-hero {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding: 2.5rem 2rem;
+  margin: 0 0 2rem;
+  color: #fff;
+  background:
+    radial-gradient(circle at 90% 15%, rgb(67 199 232 / 45%), transparent 30%),
+    linear-gradient(135deg, #00466f, #00629b 58%, #007fae);
+  border-radius: 1rem;
+}
+
+.techops-hero h1 {
+  margin: 0 0 0.5rem;
+  color: #fff;
+  font-weight: 750;
+}
+
+.techops-hero p {
+  max-width: 44rem;
+  margin-bottom: 1.25rem;
+  color: rgb(255 255 255 / 88%);
+  font-size: 1.05rem;
+}
+
+.techops-hero .md-button {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  border-color: rgb(255 255 255 / 72%);
+}
+
+.techops-hero .md-button--primary {
+  color: #00466f;
+  background: #fff;
+  border-color: #fff;
+}
+
+.techops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.techops-card {
+  min-width: 0;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.75rem;
+  transition: transform 120ms ease, border-color 120ms ease;
+}
+
+.techops-card:hover {
+  border-color: var(--md-accent-fg-color);
+  transform: translateY(-2px);
+}
+
+.techops-card h3 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .techops-hero {
+    padding: 1.75rem 1.25rem;
+    overflow-wrap: anywhere;
+  }
+}

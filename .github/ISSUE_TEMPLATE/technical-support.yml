@@ -1,0 +1,54 @@
+name: Teknik destek
+description: TechOps kapsamındaki bir teknik engel için destek isteyin.
+title: "[Destek]: "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hesap kurtarma, erişim anahtarı veya kişisel veri içeren konuları herkese açık issue olarak paylaşmayın.
+  - type: input
+    id: system
+    attributes:
+      label: Sistem veya proje
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Yapmaya çalıştığınız işlem
+    validations:
+      required: true
+  - type: textarea
+    id: blocker
+    attributes:
+      label: Engel veya hata
+      description: Hassas bilgi içermeyen hata mesajını ve davranışı açıklayın.
+    validations:
+      required: true
+  - type: textarea
+    id: attempts
+    attributes:
+      label: Denenen adımlar
+      description: Şimdiye kadar neleri kontrol ettiniz?
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Etki
+      options:
+        - Düşük — çalışma devam edebiliyor
+        - Orta — önemli bir iş engelleniyor
+        - Yüksek — kritik operasyon durdu
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Güvenlik kontrolü
+      options:
+        - label: Bu issue kişisel veri, parola, token veya kurtarma kodu içermiyor.
+          required: true
+
