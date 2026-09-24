@@ -1,0 +1,18 @@
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.venv/
+site/
+__pycache__/
+*.pyc
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+service-account*.json
+

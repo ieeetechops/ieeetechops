@@ -1,0 +1,69 @@
+name: Yeni proje önerisi
+description: TechOps portföyü için yeni bir proje önerin.
+title: "[Proje]: "
+labels:
+  - proposal
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Proje adı
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem ve hedef kullanıcı
+      description: Kim hangi problemi yaşıyor? Mevcut yöntem neden yeterli değil?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: İlk sürüm kapsamı
+      description: En küçük değerli sürümde neler olacak ve neler olmayacak?
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Başarı ölçütü
+      description: Projenin işe yaradığını nasıl ölçeceğiz?
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Önerilen sahip ve ekip
+      placeholder: GitHub kullanıcı adı veya ekip rolü
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Bağımlılıklar ve entegrasyonlar
+      description: Hangi hesaplara, sistemlere veya dış sağlayıcılara ihtiyaç var?
+  - type: textarea
+    id: data
+    attributes:
+      label: İşlenecek veri
+      description: Kişisel veri dahil hangi veri türleri gerekiyor? Gerçek veriyi buraya yazmayın.
+    validations:
+      required: true
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Bakım ve devir planı
+      description: Projeyi dönem boyunca kim işletecek, sonraki ekibe nasıl devredilecek?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Ön kontrol
+      options:
+        - label: Benzer mevcut proje ve araçları kontrol ettim.
+          required: true
+        - label: Bu öneriye gerçek kişisel veri veya secret eklemedim.
+          required: true
+

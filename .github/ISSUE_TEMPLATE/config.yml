@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Güvenlik açığı bildirimi
+    url: https://github.com/ieeetechops/ieeetechops/security/policy
+    about: Güvenlik sorunlarını herkese açık issue yerine özel kanaldan bildirin.
+  - name: Dokümantasyon sitesi
+    url: https://ieeetechops.github.io/ieeetechops/
+    about: Rehberleri ve çalışma standartlarını inceleyin.
+
