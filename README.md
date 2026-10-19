@@ -67,10 +67,14 @@ Bir sorun gördüysen issue açabilir, yeni proje önerebilir veya mevcut bir i�
 
 > Güvenlik açıklarını herkese açık issue olarak paylaşma; [güvenlik politikasındaki](SECURITY.md) özel bildirim yöntemini kullan.
 
+## İletişim
+
+TechOps ile ilgili sorular, KVKK kapsamındaki başvurular ve güvenlik bildirimleri için: **sametutku16@gmail.com**
+
 ---
 
 <div align="center">
 
-**Sürdürülebilir altyapı. Belgelenmiş süreçler. Devredilebilir sistemler.**
+IEEE İzmir Kâtip Çelebi Üniversitesi Öğrenci Kolu · Teknik Operasyonlar ve Altyapı Dairesi Başkanlığı
 
 </div>
