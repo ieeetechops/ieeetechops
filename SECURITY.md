@@ -2,7 +2,7 @@
 
 ## Güvenlik açığı bildirimi
 
-Güvenlik açıklarını herkese açık issue olarak paylaşmayın. Bu repo için GitHub'ın **Security → Report a vulnerability** alanını kullanın. Private vulnerability reporting etkin değilse bildiriminizi **sametutku16@gmail.com** adresine e-posta ile iletin.
+Güvenlik açıklarını herkese açık issue olarak paylaşmayın. Bu repo için GitHub'ın **Security → Report a vulnerability** alanını kullanın. Private vulnerability reporting etkin değilse bildiriminizi **techopsieee@gmail.com** adresine e-posta ile iletin.
 
 Bildirimde hassas veriyi kopyalamadan şu bilgileri paylaşın:
 

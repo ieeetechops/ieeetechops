@@ -69,7 +69,7 @@ Bir sorun gördüysen issue açabilir, yeni proje önerebilir veya mevcut bir i�
 
 ## İletişim
 
-TechOps ile ilgili sorular, KVKK kapsamındaki başvurular ve güvenlik bildirimleri için: **sametutku16@gmail.com**
+TechOps ile ilgili sorular, KVKK kapsamındaki başvurular ve güvenlik bildirimleri için: **techopsieee@gmail.com**
 
 ---
 
